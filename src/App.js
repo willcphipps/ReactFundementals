@@ -1,39 +1,41 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyNewComp from './components/MyNewComp';
+import PersonCard from './components/PersonCard';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Dojo</h1>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Things I need to do include 
-           <ul>
-            <li>
-              clean the house
-            </li>
-            <li>
-              drink coffee
-            </li>
-            <li>
-              create chaos in react
-            </li>
-            <li>
-              get job
-            </li>
-           </ul>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MyNewComp /> */}
+      .<div class="row m-5">
+        <PersonCard 
+          firstName="John"
+          lastName="Walsh"
+          age={23}
+          hairColor="Red"
+        />
+        <PersonCard 
+          firstName="Mark"
+          lastName="Young"
+          age={43}
+          hairColor="Blue"
+        />
+        <PersonCard 
+          firstName="Sammie"
+          lastName="Eurendomunch"
+          age={87}
+          hairColor="Brown"
+        />
+        <PersonCard 
+          firstName="Mandy"
+          lastName="Flashero"
+          age={12}
+          hairColor="Purple and sometimes green(mood depending)"
+        />
+        
+      </div>
+
     </div>
   );
 }
