@@ -15,6 +15,7 @@ class PersonCard extends Component{
   }
   render() {
     return (
+      
       <div className="card card col-sm-4 m-2">
         <div className="card-body">
           <div className="card-title">
